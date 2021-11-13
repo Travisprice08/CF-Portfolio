@@ -1,80 +1,228 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Work</title>
-  <link rel="Icon" href="./img/favi.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>Travis Price - Work</title>
+  <link rel="shortcut icon" href="./img/cell-division.png" type="image/png">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<!-- to add for this page: - Work -->
+
 <body>
+
   <header class="page-header">
-    <img class="page-header__item"src="./img/logo.png" alt="logo" >
+    <img src="./img/WebDev.png" alt="logo" class="page-header__item">
     <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
+      <ul role="menubar" class="navigation-list circleBehind">
         <li role="presentation">
-         <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          <!-- prevents screen readers from reading out that its a list -->
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
-         <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
         </li>
         <li role="presentation">
-         <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
         </li>
         <li role="presentation">
-         <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
-  <section class="work">
-    <h1>Work</h1>
-    <div class="grid">
-      <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-        </p>
-        <a href="#">See project on GitHub</a>
+  <!-- difference in the header between the pages: navigation-list__item--active -->
+
+  <main>
+    <section>
+      <h1 class="aligncenter">Work</h1>
+      <p class="aligncenter">Here are some of the projects developed during my full stack webdevelopment course with
+        CareerFoundry</p>
+      <p class="aligncenter">Visit my GitHub page to see more info on each project in the ReadMe files.</p>
+      </br>
+
+      <div class="project-grid__item">
+        <h2>Pokedex-App</h2>
+        <div class="screenshot-container_2pics">
+          <img class="screenshot" src="img/Pokedex.png" alt="Pokedex screenshot 1: Main screen.">
+          <!-- <img class="screenshot" src="img/Screenshots/Screenshot_Pokedex_modal.png"
+            alt="Pokedex screenshot 2: Modal with details of a Pokemon."> -->
+        </div>
+        <p>This is a Pokedex application that gets data from an external API, pokeapi.</p>
+        <p class="no-bottom-padding">Features:</p>
+        <ul class="no-top-gap">
+          <li>Fetches data from an external public API</li>
+          <li>A button for all original 150 Pokemon</li>
+          <li>Each button opens a modal for the selected Pokemon, offering details and an image</li>
+          <li>A search bar that allows you to search by name</li>
+        </ul>
+        <p>The task for this project was to learn about the DOM manipulation. It was also an introduction to JavaScript,
+          jQuery, and styling with Bootstrap.</p>
+        <div class="aligncenter">
+          <a href="https://travisprice08.github.io/Pokedex-App/" target="_blank" rel="noopener noreferrer">Pokedéx
+            hosted on GitHub-pages</a></br>
+          <a href="https://github.com/Travisprice08/Pokedex-App" target="_blank" rel="noopener noreferrer">Pokedéx repo
+            on
+            GitHub</a>
+        </div>
       </div>
 
-      <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-        </p>
-        <a href="#">See project on GitHub</a>
+      <div class="project-grid__item">
+        <h2>Meet-App</h2>
+        <div class="screenshot-container_3pics">
+          <img class="screenshot" src="img/Meet.png" alt="Screenshot of Meet-App Home Screen.">
+        </div>
+        <p>A meet up app that fetches data from Google Calendar API</p>
+        <p>The task for this project was to learn about test-driven-development, serverless functions, OAuth, and
+          Progressive Web Application's.
+          We also touched on creating charts and monitoring performance.</p>
+        <p class="no-bottom-padding">Features:</p>
+        <ul class="no-top-gap">
+          <li>Search by city name</li>
+          <li>Show and hide event details</li>
+          <li>Change the number of events shown</li>
+          <li>A chart showing the number of upcoming events in each city</li>
+          <li>A pie chart that shows the popularity of a specific event</li>
+        </ul>
+        <p>This application was built with CreateReactApp and was tested using test driven development.</p>
+        <p>Tech used for this project was React, CSS, Jest, AWS lambda, OAuth, Axios, Recharts, and Atatus</p>
+        <div class="aligncenter">
+          <a href="https://travisprice08.github.io/meet/" target="_blank" rel="noopener noreferrer">Meet-App hosted on
+            GitHub-pages</a></br>
+          <a href="https://github.com/Travisprice08/meet/tree/main" target="_blank" rel="noopener noreferrer">Meet-App
+            repo on
+            GitHub</a>
+        </div>
       </div>
 
-      <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-        </p>
-        <a href="#">See project on GitHub</a>
+      <div class="project-grid__item">
+        <h2>Chat-App</h2>
+        <div class="screenshot-container_3pics">
+          <img class="screenshot" src="img/Chat1.png" alt="Chat-App start screen.">
+          <img class="screenshot" src="img/Chat2.png" alt="Chat-App chat screen.">
+          <img class="screenshot3" src="img/Chat3.jpeg" alt="Chat-App image and location share.">
+        </div>
+        <p>A chat application for mobile devices running iOS and Android, created using React Native.</p>
+        <p>The task for this project was to learn how to develop and test cross-platform native apps.</p>
+        <p class="no-bottom-padding">Features:</p>
+        <ul class="no-top-gap">
+          <li>Select username</li>
+          <li>Select your background color</li>
+          <li>Send and receive messages</li>
+          <li>Share pictures from your camera roll</li>
+          <li>Take a new photo to share</li>
+          <li>Share location</li>
+          <li>See messages while offline</li>
+        </ul>
+        <p>Tech used for this project are JavaScript, React Native, Expo, Google Firebase.</p>
+        <div class="aligncenter">
+          <a href="https://github.com/Travisprice08/Chat-App" target="_blank" rel="noopener noreferrer">Chat-App repo on
+            GitHub</a>
+        </div>
       </div>
 
-      <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-        </p>
-        <a href="#">See project on GitHub</a>
+      <div class="project-grid__item">
+        <h2>Movie-API</h2>
+        <div class="screenshot-container_1pic">
+          <img class="screenshot" src="img/API.png" alt="Screenshot of data from MongoDB.">
+        </div>
+        <p>This is an API created to store movie data.</p>
+        <p>The task for this project was to learn about NodeJS, Mongoose, and
+          APIs in general.</p>
+        <p>Tech used for this project were Javascript, node.js (Express, Morgan, bodyParser, mongoose, CORS, Passport),
+          DB on nMongoDB Atlas, Postman, and Heroku.</p>
+        <div class="aligncenter">
+          <a href="https://github.com/Travisprice08/Movie_API" target="_blank" rel="noopener noreferrer">Movie-API repo
+            on GitHub</a>
+        </div>
       </div>
-    </div>
-  </section>
+
+      <div class="project-grid__item">
+        <h2>MyFlix-React-client</h2>
+        <div class="screenshot-container_1pic">
+          <img class="screenshot" src="img/.png" alt="Screenshot of the MyFlix-React-Client.">
+        </div>
+        <p>This is single-page app for the front end of the movie app. This app is built using React.</p>
+        <p>The task for this project was to learn about React, Parcel, and Heroku.</p>
+        <ul class="no-top-gap">
+          <li>View a list of movies</li>
+          <li>View details on a specific movie</li>
+          <li>User registration and login</li>
+          <li>Update user profile and add/remove movies from favorites.</li>
+          <li>Users can delete their account</li>
+        </ul>
+        <p>Tech used for this project were JavaScript, React, React Bootstrap, React Redux, Axios, Parcel, PropTypes,
+          and Heroku</p>
+        <div class="aligncenter">
+          <a href="https://myfilmdb.herokuapp.com/" target="_blank" rel="noopener noreferrer">MyFlix-React-Client live
+            demo</a></br>
+          <a href="https://github.com/Travisprice08/MyFlix-React-Client/tree/Third" target="_blank"
+            rel="noopener noreferrer">MyFlix-React-Client repo on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-grid__item">
+        <h2>MyFlix-Angular-client</h2>
+        <div class="screenshot-container_1pic">
+          <img class="screenshot" src="img/AngularPage.png" alt="Screenshot of MyFlix-Angular-client home page.">
+        </div>
+        <p>This is single-page app for the front end of the movie app. This app is built using Angular.</p>
+        <p>The task for this project was to learn about Angular, TypeScript, and documentation.</p>
+        <p class="no-bottom-padding">Features:</p>
+        <ul class="no-top-gap">
+          <li>View a list of movies</li>
+          <li>View details on a specific movie</li>
+          <li>User registration and login</li>
+          <li>Update user profile and add/remove movies from favorites.</li>
+          <li>Users can delete their account</li>
+        </ul>
+        <p>Tech used for this project were TypeScript, Angular, Angular-Material, TypeDoc, and
+          GitHub-pages.</p>
+        <div class="aligncenter">
+          <a href="https://travisprice08.github.io/myFlix-Angular-client/" target="_blank"
+            rel="noopener noreferrer">MyFlix-Angular-client
+            on GitHub-pages</a></br>
+          <a href="https://github.com/Travisprice08/myFlix-Angular-client/tree/master" target="_blank"
+            rel="noopener noreferrer">MyFlix-Angular-client
+            repo on GitHub</a>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
   <footer class="page-footer">
-    <p>Find Me On</p>
-      <div class="social-media">
-        <img src="img/insta.svg" height="30" width="30" href="https://www.instagram.com/tp_specb/" alt="instagram icon">
-        <img src="img/github.svg" height"30" width="30" href="https://github.com/Travisprice08" alt="github icon">
-        <img src="img/Linkedin.svg" height="30" width="30" href="https://www.linkedin.com/in/travis-price-21b4ab1a1/" alt="linkedin icon">
-      </div>
+    <p class="IntroText">Connect with me</p>
+    <div class="social-media">
+      <a class="circle-link" href="tel:+8165889395" target="_blank" rel="noopener noreferrer">
+        <img src="img/phone.png" class="icon" alt="Phone symbol"></a>
+      <a class="circle-link" href="mailto:Travisprice08@gmail.com?subject=Portfolio%20contact" target="_blank"
+        rel="noopener noreferrer">
+        <img src="img/gmail.png" class="icon" alt="Email icon"></a>
+      <a class="circle-link" href="https://github.com/Travisprice08" target="_blank" rel="noopener noreferrer">
+        <img src="img/github.svg" class="icon" alt="Github logo"></a>
+      <a class="circle-link" href="https://www.linkedin.com/in/travis-price-21b4ab1a1/" target="_blank"
+        rel="noopener noreferrer"><img src="img/Linkedin.svg" class="icon" alt="LinkedIn logo"></a>
+      <a class="circle-link" href="https://www.instagram.com/tp_specb/">
+        <img src="img/insta.svg" height="30" width="30" alt="instagram icon">
+      </a>
+      <!-- <a class="circle-link" href="" target="_blank" rel="noopener noreferrer"><img
+          src="img/Icons/Twitter_logo.svg" class="icon" alt="Twitter logo"></a> -->
+
+    </div>
   </footer>
-  </body>
-</html>
+
+  <!-- <script src="js/tota11y.min.js"></script> -->
+</body>
 
 </html>
