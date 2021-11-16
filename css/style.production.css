@@ -358,6 +358,30 @@ td {
 .project-grid__item h2 {
   text-align: center;
 }
+
+.project-grid__item2 { /* Grid fallback */
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  background-color: #774ed8;
+  color: #f1f1f1;
+  border-radius: 6px;
+  border: 1px solid;
+  -webkit-box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
+          box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
+  text-align: left;
+}
+@media all and (max-width: 750px) {
+
+  .project-grid__item2 {
+  padding: 10px;
+  }
+}
+.project-grid__item2 h2 {
+  text-align: center;
+}
+
 @supports (display: grid) {
   .project-grid {
     width: 100%;
@@ -406,7 +430,7 @@ td {
   .screenshot-container_3pics {
     width: 100%;
     display: -ms-grid;
-    display: block;
+    display: flex;
     -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
@@ -434,13 +458,26 @@ td {
             box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
   }
 
+  .screenshot2 {
+    width: auto;
+    min-width: 0; 
+    max-width: 100%;
+    min-height: auto;
+    height: 100%;
+    margin: auto;
+    border: 3px solid #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
+            box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
+  }
+
   .screenshot3 {
     width: auto;
     min-width: 0; 
     max-width: 26.9%;
     min-height: auto;
     max-height: 26.9%;
-    margin: 0;
+    margin: auto;
     border: 3px solid #f1f1f1;
     border-radius: 3px;
     -webkit-box-shadow: 3px 3px 8px rgb(0 0 0 / 30%);
